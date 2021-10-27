@@ -5,12 +5,13 @@ function LoginScreen() {
     return(
         <div className="login-screen">
             <form>
-                <label>Username</label>
-                <input type="text"></input>
+                <label>Sign In</label>
+                <input type="text" placeholder="Username"></input>
 
-                <label>Password</label>
-                <input type="password"></input>
+                <input type="password" placeholder="Password"></input>
                 <button type="submit">Login</button>
+                <p>New here? <a href="">Register</a>
+                </p>
             </form>
         </div>
 
