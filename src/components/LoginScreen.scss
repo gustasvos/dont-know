@@ -2,7 +2,6 @@
 
 $purple: #9416cec5;
 $blue: #290041;
-$white: #ffffff;
 
 body {
     background-image: url('../assets/background1.png');
@@ -29,14 +28,15 @@ input {
     padding: 5 10 5 10;
 }
 
-button {
+
+.login-form .login-btn {
     font-family: 'Nunito Sans', sans-serif;
     display: block;
     margin: 0 auto;
     margin-top: 10px;
     font-size: 30;
     border-radius: 10px;
-    background-color: $white;
+    background-color: white;
     color: black;
     //padding-left: 15%;
     padding: 0 15% 0 15%;
@@ -56,3 +56,16 @@ p {
     padding: 1px 8px 8px 8px;
 }
 
+.login-screen .login-btn {
+    font-family: 'Nunito Sans', sans-serif;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 30;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    //padding-left: 15%;
+    padding: 0 15% 0 15%;
+    cursor: pointer;
+}

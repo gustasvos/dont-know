@@ -1,37 +1,29 @@
 import React, { useState } from 'react'
+import RegisterScreen from './RegisterScreen'
 import './LoginScreen.scss'
 
 function LoginScreen() {
-    return(
+    const [showPopup, setShowPopup] = useState(false)
+
+    return (
         <div className="login-screen">
-            <form>
-                <label>Sign In</label>
-                <input type="text" placeholder="Username"></input>
+            <div className="login-form">
+                <form>
+                    <label>Sign In</label>
+                    <input type="text" placeholder="Username"></input>
 
-                <input type="password" placeholder="Password"></input>
-                <button type="submit">Login</button>
-                <p>New here? <a href="">Register</a>
-                </p>
-            </form>
+                    <input type="password" placeholder="Password"></input>
+                    <button className="login-btn" type="submit">Login</button>
+                </form>
+            </div>
+            
+            <p>New here?</p>
+            <button className='login-btn' onClick={() => setShowPopup(true)}>Register</button>
+            
+            <RegisterScreen trigger={showPopup}>
+                <h3>meu popup!!</h3>
+            </RegisterScreen>
         </div>
-
-        // <div className="login-screen">
-        //     <Form>
-        //         <Form.Group className="login-area" controlId="formLogin">
-        //             <Form.Label>Username</Form.Label>
-        //             <Form.Control type="text" placeholder="Enter login" />
-        //         </Form.Group>
-
-        //         <Form.Group className="password-area" controlId="formPassword">
-        //             <Form.Label>Password</Form.Label>
-        //             <Form.Control type="password" placeholder="Password"/>
-        //         </Form.Group>
-
-        //         <Button variant="primary" type="submit">
-        //             Login
-        //         </Button>
-        //     </Form>
-        // </div>
     )
 }
 
