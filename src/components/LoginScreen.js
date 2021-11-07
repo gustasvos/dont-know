@@ -16,13 +16,17 @@ function LoginScreen() {
                     <button className="login-btn" type="submit">Login</button>
                 </form>
             </div>
-            
-            <p>New here?</p>
-            <button className='login-btn' onClick={() => setShowPopup(true)}>Register</button>
-            
-            <RegisterScreen trigger={showPopup}>
-                <h3>meu popup!!</h3>
-            </RegisterScreen>
+
+            <p>
+                New here?
+                <a onClick={() => setShowPopup(true)} style={{cursor:'pointer'}}>
+                    Register
+                </a>
+            </p>
+
+
+
+            <RegisterScreen trigger={showPopup} setTrigger={setShowPopup} />
         </div>
     )
 }

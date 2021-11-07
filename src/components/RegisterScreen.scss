@@ -1,3 +1,6 @@
+$purple: #9416cec5;
+
+
 .popup {
     position: fixed;
     top: 0;
@@ -15,11 +18,13 @@
     padding: 32px;
     width: 100%;
     max-width: 640px;
-    background-color: #FFF;
+    background-color: #802faf;
+    border-radius: 10px;
+    padding: 1px 8px 8px 8px;
 }
 
 .popup-inner .close-btn {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 10px;
+    right: 10px;
 }
