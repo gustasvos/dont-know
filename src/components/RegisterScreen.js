@@ -8,9 +8,9 @@ function RegisterScreen(props) {
             <div className="popup-inner">
                 <form>
                     <label>Register</label>
-                    <input type="text" placeholder="Username"></input>
-                    <input type="password" placeholder="Password"></input>
-                    <input type="password" placeholder="Confirm password"></input>
+                    <input type="text" placeholder="Username" required></input>
+                    <input type="password" placeholder="Password" required></input>
+                    <input type="password" placeholder="Confirm password" required></input>
                     <button type="submit">Create account</button>
                 </form>
                 <button className="close-btn" onClick={() => props.setTrigger()}>close</button>

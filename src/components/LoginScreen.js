@@ -10,9 +10,9 @@ function LoginScreen() {
             <div className="login-form">
                 <form>
                     <label>Sign In</label>
-                    <input type="text" placeholder="Username"></input>
+                    <input type="text" placeholder="Username" required></input>
 
-                    <input type="password" placeholder="Password"></input>
+                    <input type="password" placeholder="Password" required></input>
                     <button className="login-btn" type="submit">Login</button>
                 </form>
             </div>
@@ -23,7 +23,6 @@ function LoginScreen() {
                     Register
                 </a>
             </p>
-
 
 
             <RegisterScreen trigger={showPopup} setTrigger={setShowPopup} />
